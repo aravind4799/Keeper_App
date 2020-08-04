@@ -21,6 +21,8 @@ mongoose.connection.once('open',() => (console.log("connected")) );
 const users =require("./routes/users");
 
 //a http request logger.
+//a http request logger
+
 app.use(morgan('tiny'));
 //whenever we go into path localhost:3000/users then code in routes/users.js will be 
 //executed 
