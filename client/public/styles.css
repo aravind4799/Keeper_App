@@ -1,0 +1,355 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  background-color:#5CDB95 ;
+  font-size:62.5%;
+  /* 1rem = 10px */
+}
+body {
+  background: #eee;
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #379683;
+  margin: auto -1.6rem;
+  padding: 2rem 2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+  height:10rem;
+}
+
+.icon {
+  color:#fff;
+  display: inline-block;
+  height:6rem;
+  width:8rem;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size: 2.2rem;
+  display: inline-block;
+  position: relative;
+  top:-3rem;
+}
+
+.headerbutton {
+  position: absolute;
+  right:3rem;
+  top:3rem;
+  appearance: none;
+  outline: 0;
+  background-color: #e84a5f;
+  border: 0;
+  padding: 1rem 1.5rem;
+  color:#FFF;
+  border-radius: .6rem;
+  font-size: 2rem;
+}
+.headerbutton:hover{
+  background-color: #aa0a20;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: .7rem;
+  box-shadow: 0 .2rem .5rem #ccc;
+  padding: 1rem;
+  width: 18rem;
+  margin: 1.6rem;
+  float: left;
+}
+.note h1 {
+  font-size: 2rem;
+  margin-bottom: .6rem;
+}
+.note p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 1rem;
+  color: #e84a5f;
+  border: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.div-form{
+  background-color: #5CDB95;
+}
+
+.create-note {
+  position: relative;
+  width: 48rem;
+  margin: 0 auto 2rem auto;
+  background-color:#fff;
+  padding: 1.5rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+.create-note input,
+.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: inherit;
+  resize: none;
+}
+.create-note button {
+  position: absolute;
+  right: 1.8rem;
+  bottom: -1.8rem;
+  background: #e84a5f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 3.6rem;
+  height: 3.6rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.signuphead{
+  float:left;
+  background-color:#5CDB95;
+  width: 50%;
+  height:100vh;
+}
+.signuphead h1{
+  color: #fff;
+  text-align: center;
+  padding-top: 10rem;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size:6rem;
+}
+
+.center{
+  text-align: center;
+  color:white;
+  font-size:1.9rem;
+  
+}
+
+.login{
+  float:left;
+  height:100vh;
+  width:50%;
+  background-color: #379683;
+  color: #fff;
+  text-align: center;
+  padding-top: 12rem;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size:3.5rem;
+}
+
+.login input{
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 25rem;
+  border-radius: 6px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1rem 1.5rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 300;
+  outline: white;
+}
+
+.loginbutton{
+  appearance: none;
+  outline: 0;
+  background-color: #e84a5f;
+  border: 0;
+  padding: 1rem 1.5rem;
+  color:#FFF;
+  border-radius: 6px;
+  width: 25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.login ::placeholder{
+  color:White;
+}
+a[href*="#"] {
+  text-decoration: none;
+  color: #e84a5f;
+  display:block;
+  font-size:2rem;
+  margin-top: 1rem;
+}
+a[href*="#"]:hover {
+  color:#fff
+}
+.loginbutton:hover{
+  background-color: #aa0a20;
+}
+.greet{
+  text-align: center;
+  font-size: 3rem;
+  font-family:"McLaren", cursive ;
+  color: #fff;
+  background-color: #5CDB95;
+  padding: 2.5rem 0;
+}
+
+@media (max-width :720px){
+
+  .login{
+    width:100%;
+    float:none;
+    display:block;
+    font-size: 4rem;
+  }
+
+  .signuphead{
+    width:100%;
+    float:none;
+    display:block;
+    padding-top: 2rem;
+  }
+
+}
+
+@media (max-width :425px) {
+  
+  html {
+    font-size:56.25%; 
+  }
+
+  .login{
+    width:100%;
+    font-size: 4rem;
+  }
+
+  .signuphead{
+    width:100%;
+  }
+
+  .signuphead h1{
+    padding-top: 8rem;  
+  }
+
+  .center{
+    text-align: center;
+    color:white;
+    font-size:3rem;
+    margin-top: 11rem;
+  }
+
+
+  
+  .login input{
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    background-color: rgba(252, 252, 252, 0.2);
+    width: 32rem;
+    border-radius: 6px;
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 2rem 3rem;
+    margin: 3rem auto 3rem auto;
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 300;
+    outline: white;
+  }
+  
+  .loginbutton{
+    appearance: none;
+    outline: 0;
+    background-color: #e84a5f;
+    border: 0;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    color:#FFF;
+    border-radius: 1rem;
+    width: 25rem;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .login ::placeholder{
+    color:white;
+  }
+  
+  a[href*="#"] {
+    text-decoration: none;
+    color: #e84a5f;
+    display:block;
+    font-size:3rem;
+    margin-top: 1rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .create-note {
+    position: relative;
+    width: 50%;
+    margin: 0 auto 2rem auto;
+    background-color:#fff;
+    padding: 1.5rem;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+  .create-note input,
+  .create-note textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.6rem;
+    font-family: inherit;
+    resize: none;
+  }
+
+  .headerbutton {
+    position: absolute;
+    right:1rem;
+    top:4rem;
+}
+
+}
+
+
+
+
+
+
+
+  
+
