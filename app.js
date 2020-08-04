@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.json());
 
 
-mongoose.connect(process.env.MONGOLAB_URI || "mongodb://localhost:27017/NotesDB" ,{ useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect(process.env.MONGOLAB_URI || "mongodb+srv://admin_aravind:battlebee4799@cluster0.5xhau.mongodb.net/NotesDB" ,{ useNewUrlParser: true , useUnifiedTopology: true })
 // to verify connection with mongodb cloud
 mongoose.connection.once('open',() => (console.log("connected")) );
 
