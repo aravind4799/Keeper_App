@@ -4,17 +4,19 @@
   "description": "backend server",
   "main": "app.js",
   "engines": {
-    "node":"v10.19.0"
+    "node": "v10.19.0"
   },
   "scripts": {
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "start":"node app.js",
+    "start": "node app.js",
     "client": "cd client && npm start",
     "mern": "concurrently -n 'server,client' -c 'red,green' \"nodemon app.js\" \"npm run client\""
   },
   "author": "its me",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "concurrently": "^5.2.0",
@@ -23,6 +25,10 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.23",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1"
   }
 }
