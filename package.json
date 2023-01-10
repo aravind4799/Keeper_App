@@ -7,7 +7,7 @@
     "node": "v10.19.0"
   },
   "scripts": {
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-postbuild": " cd node_modules && rmdir -r babel-jest && rmdir -r babel-loader && rmdir -r eslint && rmdir -r jest && rmdir -r webpack && rmdir -r webpack-dev-server && cd client && npm install && npm run build",
     "start": "node app.js",
     "client": "cd client && npm start",
     "mern": "concurrently -n 'server,client' -c 'red,green' \"nodemon app.js\" \"npm run client\""
